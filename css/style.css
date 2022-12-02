@@ -23,13 +23,53 @@ h1{
 }
 #workGrid{
   margin: 0px 5%;
+  min-height: 700px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ;
+  grid-template-areas: 
+  "sun sun "
+  "xxx yyy"
+  "uuu ttt";
 }
 
 
+a >h1 {
+  color: rgb(255, 0, 106);
+  padding: 20px;
+  background-color: rgb(0, 255, 251);
+  position: relative;
+  right: 0px;
+  top: 220px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+  text-decoration: none;
+
+}
+
+#Sun{
+grid-area: sun;
+background-image: url(../images/02-portfolio-1.jpg);
+height: 350px;
+}
+#XXX{
+  grid-area: xxx;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#YYY{
+  grid-area: yyy;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+#TTT{
+  grid-area: ttt;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+#UUU{
+  grid-area: uuu;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
 
 
 header {
