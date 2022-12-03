@@ -25,6 +25,15 @@ header>h1{
   padding-right: 5px;
 
 }
+
+#about{
+      border-right: solid blue;
+
+}
+#work{
+  border-right: solid pink;
+}
+
 .container{
   margin: 0px 5%;
   display: grid;
@@ -32,6 +41,7 @@ header>h1{
   height: 70vh;
   grid-template-columns: 25% 75%;
   grid-template-rows: 1fr 3fr 1fr;
+  gap: 20px;
 }
 .work-grid {
   background-position: center;
@@ -43,6 +53,9 @@ header>h1{
   align-content: end;
 }
 
+#contact{
+  border-right: solid orange;
+}
 #workGrid{
   margin: 0px 5%;
   min-height: 700px;
@@ -135,5 +148,5 @@ p {
   margin: 0;
 }
 div h2{
-  color: rgb(39, 20, 20);s
+  color: rgb(233, 94, 8);s
 }
