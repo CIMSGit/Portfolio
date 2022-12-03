@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  color: #ff8000;
 }
 
 body {
@@ -57,7 +58,7 @@ header>h1{
   border-right: solid orange;
 }
 #workGrid{
-  margin: 0px 5%;
+  /* margin: 0px 5%; */
   min-height: 700px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -84,12 +85,13 @@ a >h4 {
 
 section >h2{
 display: flex;
+position: relative;
+top: -10px;
 justify-content: flex-end;
-align-items: center;
-margin-right: 20px;
-font-size: 56px;
+margin-right: 10px;
+font-size: 48px;
+align-items: flex-end;
 flex-wrap: wrap;
-text-align: right;
 }
 
 #Sun{
