@@ -149,7 +149,6 @@ nav {
 a {
   color: #ff8000;
   margin-left: 25px;
-  text-decoration: none;
 }
 
 h2,
@@ -160,6 +159,11 @@ h6 {
   margin: 0;
 }
 
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 p {
   margin: 0;
 }
