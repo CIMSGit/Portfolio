@@ -82,6 +82,16 @@ a >h4 {
 
 }
 
+section >h2{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-right: 20px;
+font-size: 56px;
+flex-wrap: wrap;
+text-align: right;
+}
+
 #Sun{
 grid-area: sun;
 background-image: url(../images/02-portfolio-1.jpg);
