@@ -9,8 +9,11 @@ body {
   line-height: 1.5;
 }
 
-h1{
-  display: inline-block;
+header>h1{
+  display: inline;
+  background: white;
+  padding-left: 40px;
+  padding-right: 5px;
 
 }
 .container{
@@ -100,7 +103,7 @@ nav {
 .hero-banner{
   display: flex;
   background-image: url(../images/02-hero-bg.jpg);
- height: 80px;
+ height: 180px;
  object-fit: cover;
  align-items: flex-end;
  justify-content: flex-end;
