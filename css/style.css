@@ -120,6 +120,9 @@ nav {
   font-size: 20px;
   list-style-type: none;
 }
+.page-section {
+  margin-top: 20px;
+}
 
 .hero-banner{
   display: flex;
@@ -128,6 +131,7 @@ nav {
  object-fit: cover;
  align-items: flex-end;
  justify-content: flex-end;
+ 
  
 }
 a {
