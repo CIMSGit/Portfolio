@@ -1,12 +1,26 @@
 * {
   box-sizing: border-box;
   color: #ff8000;
+font-family:Arial, Helvetica, sans-serif;
 }
 
+ section >p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+letter-spacing: 0px;
+color: #000000;
+font-weight: 400;;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+ text-align: justify;
+  text-justify: inter-word;
+}
+ 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5;
 }
 
@@ -21,18 +35,27 @@ div >h2{
 }
 header>h1{
   display: inline;
-  background: white;
+  background: rgb(0, 0, 0);
   padding-left: 40px;
+  letter-spacing: -1px;
   padding-right: 5px;
+  color: rgb(230, 255, 7);
+  font-family: sans-serif;
 
 }
 
+section >img{
+  height: 250px;
+  float: left;
+  padding-right: 10px;
+  padding-left: 5px;
+}
 #about{
-      border-right: solid blue;
+      border-right:3px solid black;
 
 }
 #work{
-  border-right: solid pink;
+  border-right: 3px solid black;
 }
 
 .container{
@@ -55,7 +78,8 @@ header>h1{
 }
 
 #contact{
-  border-right: solid orange;
+  border-right:  3px solid black;
+  
 }
 #workGrid{
   /* margin: 0px 5%; */
@@ -72,11 +96,17 @@ header>h1{
 
 
 .work-grid h1 {
-  background-color: aqua;
+  background-color: rgba(255, 68, 0, 0.829);
   position: relative;
   bottom: 10px;
   max-width: fit-content;
   padding: 5px;
+  color:white;
+}
+
+.work-grid h1 a{
+  background-color: rgba(255, 68, 0, 0.829);
+  color: white;
 }
 section >h2{
 display: flex;
@@ -84,7 +114,7 @@ position: relative;
 top: -10px;
 justify-content: flex-end;
 margin-right: 10px;
-font-size: 48px;
+font-size: 36px;
 align-items: flex-end;
 flex-wrap: wrap;
 }
@@ -114,9 +144,9 @@ height: 350px;
 
 
 header {
-  padding: 0px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #70267f;
+  padding: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black;
   color: #ff8000;
 }
 nav {
@@ -165,6 +195,7 @@ h6 {
 }
 p {
   margin: 0;
+  color: black;
 }
 div h2{
   color: rgb(233, 94, 8);s
