@@ -1,8 +1,8 @@
-* {
+/* * {
   box-sizing: border-box;
   color: #ff8000;
 font-family:Arial, Helvetica, sans-serif;
-}
+} */
 
  section >p{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -16,7 +16,13 @@ text-transform: none;
  text-align: justify;
   text-justify: inter-word;
 }
- 
+pre{
+  margin-bottom:10px;
+  background-color: rgba(0, 0, 0, 0.128);
+  color: white;
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -83,7 +89,7 @@ section >img{
 }
 #workGrid{
   /* margin: 0px 5%; */
-  min-height: 700px;
+  min-height: 940px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -120,48 +126,90 @@ flex-wrap: wrap;
 }
 
 #Sun{
-grid-area: sun;
-background-image: url(../images/02-portfolio-1.jpg);
-height: 350px;
-}
-#XXX{
-  grid-area: xxx;
-  background-image: url(../images/02-portfolio-2.jpg);
-}
-
-#YYY{
-  grid-area: yyy;
-  background-image: url(../images/02-portfolio-3.jpg);
-}
-#TTT{
-  grid-area: ttt;
-  background-image: url(../images/02-portfolio-3.jpg);
-}
-#UUU{
-  grid-area: uuu;
-  background-image: url(../images/02-portfolio-4.jpg);
-}
-
-
-header {
-  padding: 15px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: black;
-  color: #ff8000;
-}
-nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  list-style-type: none;
-}
-.page-section {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  grid-area: sun;
+  }
+  #Sun img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 450px;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top:0 auto;
+    cursor: pointer;
+    align-content: end;
+  }
+  h4{
+    color: white;
+    font-size: 20px;
+  }
+  #XXX{
+    grid-area: xxx;
+  }
+  #YYY{
+    grid-area: yyy;
+  }
+  .work-grid img{
+    object-fit: cover;
+    max-height: 225px;
+    width: 100%;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    cursor: pointer;
+    align-content: end;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
   
-}
+  }
+  #TTT{
+    grid-area: ttt;
+  }
+  #UUU{
+    grid-area: uuu;
+  }
+  
+  
+  header {
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #70267f;
+    color: #ff8000;
+  }
+  nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+  }
+  .page-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .ZZZ{ transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 
 .hero-banner{
@@ -174,12 +222,23 @@ nav {
  
  
 }
-a {
+
+.work-grid:hover img {
+  opacity: 0.3;
+}
+.work-grid {
+  position: relative;
+  text-align: center;
+  color: white;}
+
+ a {
   color: #ff8000;
-  margin-left: 25px;
   text-decoration: none;
 }
 
+nav a{
+  margin-left: 20px;
+}
 h2,
 h3,
 h4,
@@ -197,6 +256,6 @@ p {
   margin: 0;
   color: black;
 }
-div h2{
+ h2{
   color: rgb(233, 94, 8);s
 }
