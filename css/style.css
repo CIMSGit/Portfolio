@@ -220,6 +220,12 @@ flex-wrap: wrap;
  object-fit: cover;
  align-items: flex-end;
  justify-content: flex-end;
+ background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
  
  
 }
