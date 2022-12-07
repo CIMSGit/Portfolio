@@ -1,3 +1,4 @@
+/* universal selector */
 * {
   box-sizing: border-box;
   color: #ff8000;
@@ -8,24 +9,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  line-height: 1.5;
 }
 
-header>h1{
-  display: inline;
-  background: rgb(0, 0, 0);
-  padding-left: 40px;
-  letter-spacing: -1px;
-  padding-right: 5px;
-  color: rgb(230, 255, 7);
-  font-family: sans-serif;
-
+header {
+  height: 60px;
+  padding: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  color: #ff8000;
 }
 
+nav {
+  padding-top: 20px;
+  margin-right: 25px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  background-color: black;
+}
+
+a {
+  color: #ff8000;
+  text-decoration: none;
+}
+
+nav a{
+  margin-left: 25px;
+}
+
+/* banner settings */
 .hero-banner{
   display: flex;
   background-image: url(../images/02-hero-bg.jpg);
- height: 180px;
+ height: 150px;
  object-fit: cover;
  align-items: flex-end;
  justify-content: flex-end;
@@ -36,52 +53,27 @@ header>h1{
   align-content: end;
 }
 
+/* displays main area as grid */
 .container{
   margin: 0px 5%;
   display: grid;
-  min-height: 500px;
-  height: 70vh;
+  height: 100vh;
   grid-template-columns: 25% 75%;
   grid-template-rows: 1fr 3fr 1fr;
   gap: 20px;
 }
 
- section >p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 18px;
-letter-spacing: 0px;
-color: #000000;
-font-weight: 400;;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
- text-align: justify;
-  text-justify: inter-word;
-}
+/* Sets margin and font size within pre tag */
 pre{
-  margin-bottom:10px;
   background-color: rgba(0, 0, 0, 0.128);
   color: white;
   font-size: 16px;
 }
-
-
-
-div >h2{
-  display: inline-block;
-  background: rgb(230, 255, 7);
-  padding-left: 20px;
-  padding-right: 50px;
-  margin-right: 15px;
-  margin-bottom: 10px;
-
-}
-
-
+/* sets avatar's img height */
 section >img{
-  height: 250px;
+  height: 200px;
   float: left;
-  padding-right: 10px;
+  padding-right: 20px;
   padding-left: 5px;
 }
 #about{
@@ -92,6 +84,21 @@ section >img{
   border-right: 3px solid black;
 }
 
+#contact{
+  border-right:  3px solid black;
+}
+
+/* subgrid area */
+#workGrid{
+  min-height: 940px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "bio bio "
+  "xxx yyy"
+  "uuu ttt";
+}
 
 .work-grid {
   background-position: center;
@@ -100,25 +107,7 @@ section >img{
   margin: 5px;
   cursor: pointer;
   display: grid;
-  align-content: end;
 }
-
-#contact{
-  border-right:  3px solid black;
-  
-}
-#workGrid{
-  /* margin: 0px 5%; */
-  min-height: 940px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "sun sun "
-  "xxx yyy"
-  "uuu ttt";
-}
-
 
 
 .work-grid h1 {
@@ -134,21 +123,23 @@ section >img{
   background-color: rgba(255, 68, 0, 0.829);
   color: white;
 }
-section >h2{
-display: flex;
-position: relative;
-top: -10px;
-justify-content: flex-end;
-margin-right: 10px;
-font-size: 36px;
-align-items: flex-end;
-flex-wrap: wrap;
+.work-grid img{
+  object-fit: cover;
+  max-height: 225px;
+  width: 100%;
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  cursor: pointer;
+  align-content: end;
+  transition: .6s ease;
 }
-
-#Sun{
-  grid-area: sun;
+#bio{
+  grid-area: bio;
   }
-  #Sun img {
+
+#bio img {
     object-fit: cover;
     width: 100%;
     max-height: 450px;
@@ -158,119 +149,86 @@ flex-wrap: wrap;
     margin-top:0 auto;
     cursor: pointer;
     align-content: end;
-  }
-  h4{
-    color: white;
-    font-size: 20px;
-  }
-  #XXX{
+}
+
+#XXX{
     grid-area: xxx;
-  }
-  #YYY{
-    grid-area: yyy;
-  }
-  .work-grid img{
-    object-fit: cover;
-    max-height: 225px;
-    width: 100%;
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    cursor: pointer;
-    align-content: end;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+}
   
-  }
-  #TTT{
+#YYY{
+    grid-area: yyy;
+}
+#TTT{
     grid-area: ttt;
   }
-  #UUU{
+
+#UUU{
     grid-area: uuu;
-  }
-  
-  
-  header {
-    padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: black;
-    color: #ff8000;
-  }
-  nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    list-style-type: none;
-    background-color: black;
-  }
-  .page-section {
-    margin-top: 20px;
+}
+p{
+  color: black;
+  margin: 0px;
+  text-align:justify;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+}
+.page-section {
+    margin-top:20px;
     margin-bottom: 20px;
     
     
-  }
-  .bottom-left {
+}
+/* text positioning */
+.bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
-  }
-  
-  .ZZZ{ transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-
-
-
-
-
+}
+/* Hover setting on IMG on subgrid items */
 .work-grid:hover img {
   opacity: 0.3;
 }
 .work-grid {
   position: relative;
   text-align: center;
-  color: white;}
-
- a {
-  color: #ff8000;
-  text-decoration: none;
+  color: white;
 }
-
-nav a{
-  margin-left: 20px;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 .links{
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-p {
-  margin: 0;
-  color: black;
+div >h2{
+  display: inline-block;
+  background: rgb(230, 255, 7);
+  padding-left: 20px;
+  padding-right: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
- h2{
+section > h2{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 0px;
+  font-size: 36px;
+  align-items: flex-end;
+  }
+h1{
+  display: inline-block;
+text-align: center;
+  background: rgb(0, 0, 0);
+  padding-left: 40px;
+  letter-spacing: -1px;
+  padding-right: 5px;
+  color: rgb(230, 255, 7);
+  font-family: sans-serif;
+  margin: 15px;
+}
+h2{
   color: rgb(233, 94, 8);
-
+  margin: 0px;
+}
+h4{
+  color: white;
 }
