@@ -4,7 +4,7 @@
   color: #ff8000;
 font-family:Arial, Helvetica, sans-serif;
 }
-
+/* general body settings, styling */
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ header {
   background-color: black;
   color: #ff8000;
 }
-
+/* navigation bar settings */
 nav {
   padding-top: 20px;
   margin-right: 25px;
@@ -28,12 +28,12 @@ nav {
   list-style-type: none;
   background-color: black;
 }
-
+/* link stylings */
 a {
   color: #ff8000;
   text-decoration: none;
 }
-
+/* styling for the link within the navigation bar */
 nav a{
   margin-left: 25px;
 }
@@ -68,6 +68,7 @@ pre{
   background-color: rgba(0, 0, 0, 0.128);
   color: white;
   font-size: 16px;
+  /* position: relative; */
 }
 /* sets avatar's img height */
 section >img{
@@ -76,6 +77,8 @@ section >img{
   padding-right: 20px;
   padding-left: 5px;
 }
+
+/* border settings */
 #about{
       border-right:3px solid black;
 
@@ -88,7 +91,7 @@ section >img{
   border-right:  3px solid black;
 }
 
-/* subgrid area */
+/* subgrid area  settings*/
 #workGrid{
   min-height: 940px;
   display: grid;
@@ -107,12 +110,16 @@ section >img{
   margin: 5px;
   cursor: pointer;
   display: grid;
+  position: relative;
+  text-align: center;
+  color: white;
 }
+
 
 
 .work-grid h1 {
   background-color: rgba(255, 68, 0, 0.829);
-  position: relative;
+  /* position: relative; */
   bottom: 10px;
   max-width: fit-content;
   padding: 5px;
@@ -123,6 +130,7 @@ section >img{
   background-color: rgba(255, 68, 0, 0.829);
   color: white;
 }
+
 .work-grid img{
   object-fit: cover;
   max-height: 225px;
@@ -135,6 +143,7 @@ section >img{
   align-content: end;
   transition: .6s ease;
 }
+/* selectors to target grid areas for porfolio imgs */
 #bio{
   grid-area: bio;
   }
@@ -165,6 +174,8 @@ section >img{
 #UUU{
     grid-area: uuu;
 }
+
+/* stulying for paragraphs */
 p{
   color: black;
   margin: 0px;
@@ -172,6 +183,7 @@ p{
   font-size: 16px;
   letter-spacing: 1.1px;
 }
+/* top and margin bottom for sections */
 .page-section {
     margin-top:20px;
     margin-bottom: 20px;
@@ -188,16 +200,13 @@ p{
 .work-grid:hover img {
   opacity: 0.3;
 }
-.work-grid {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+
 .links{
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+/* hero banner's text styling */
 div >h2{
   display: inline-block;
   background: rgb(230, 255, 7);
@@ -206,6 +215,7 @@ div >h2{
   margin-right: 15px;
   margin-bottom: 10px;
 }
+/* styling for about me, work and contact me for left column in the main grid */
 section > h2{
   display: flex;
   justify-content: flex-end;
@@ -214,6 +224,8 @@ section > h2{
   font-size: 36px;
   align-items: flex-end;
   }
+
+  /* header h1. h2, h4 styles */
 h1{
   display: inline-block;
 text-align: center;
