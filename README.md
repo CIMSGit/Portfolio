@@ -14,6 +14,7 @@ Using :flexbox, grid, media queries, and CSS variables. You'll get to see my new
 * [Media queries](https://www.w3schools.com/cssref/css3_pr_mediaquery.php)
 * [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 <hr>
 
 ## Installation
