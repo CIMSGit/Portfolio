@@ -4,6 +4,48 @@
 font-family:Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.5;
+}
+
+header>h1{
+  display: inline;
+  background: rgb(0, 0, 0);
+  padding-left: 40px;
+  letter-spacing: -1px;
+  padding-right: 5px;
+  color: rgb(230, 255, 7);
+  font-family: sans-serif;
+
+}
+
+.hero-banner{
+  display: flex;
+  background-image: url(../images/02-hero-bg.jpg);
+ height: 180px;
+ object-fit: cover;
+ align-items: flex-end;
+ justify-content: flex-end;
+ background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  align-content: end;
+}
+
+.container{
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 20px;
+}
+
  section >p{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
@@ -23,12 +65,7 @@ pre{
   font-size: 16px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  line-height: 1.5;
-}
+
 
 div >h2{
   display: inline-block;
@@ -39,16 +76,7 @@ div >h2{
   margin-bottom: 10px;
 
 }
-header>h1{
-  display: inline;
-  background: rgb(0, 0, 0);
-  padding-left: 40px;
-  letter-spacing: -1px;
-  padding-right: 5px;
-  color: rgb(230, 255, 7);
-  font-family: sans-serif;
 
-}
 
 section >img{
   height: 250px;
@@ -64,15 +92,7 @@ section >img{
   border-right: 3px solid black;
 }
 
-.container{
-  margin: 0px 5%;
-  display: grid;
-  min-height: 500px;
-  height: 70vh;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 1fr 3fr 1fr;
-  gap: 20px;
-}
+
 .work-grid {
   background-position: center;
   background-size: cover;
@@ -213,22 +233,9 @@ flex-wrap: wrap;
   }
 
 
-.hero-banner{
-  display: flex;
-  background-image: url(../images/02-hero-bg.jpg);
- height: 180px;
- object-fit: cover;
- align-items: flex-end;
- justify-content: flex-end;
- background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
- 
- 
-}
+
+
+
 
 .work-grid:hover img {
   opacity: 0.3;
@@ -264,5 +271,6 @@ p {
   color: black;
 }
  h2{
-  color: rgb(233, 94, 8);s
+  color: rgb(233, 94, 8);
+
 }
