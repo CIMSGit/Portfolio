@@ -21,7 +21,7 @@ header {
 /* navigation bar settings */
 nav {
   padding-top: 20px;
-  margin-right: 25px;
+  margin-right: 55px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
@@ -212,7 +212,7 @@ div >h2{
   background: rgb(230, 255, 7);
   padding-left: 20px;
   padding-right: 15px;
-  margin-right: 15px;
+  margin-right: 55px;
   margin-bottom: 10px;
 }
 /* styling for about me, work and contact me for left column in the main grid */
