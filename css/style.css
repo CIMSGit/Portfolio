@@ -299,7 +299,7 @@ p{
     justify-content: flex-end;
     margin-right: 5px;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 15px;
     align-items: flex-end;
     }
 }
@@ -347,9 +347,7 @@ p{
     "uuu ttt";
     
   }
-  section > h2{
-    display: flex; 
-  }
+ 
 .page-section h2{
   font-size: 30px;
 }
