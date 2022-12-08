@@ -1,6 +1,7 @@
 # Csaba's Portfolio
 
-## Description <hr> 
+## Description 
+
 A portfolio of work,showcasing my skills and talent.
 
 Using :flexbox, grid, media queries, and CSS variables. You'll get to see my new skills. 
