@@ -303,7 +303,7 @@ p{
     align-items: flex-end;
     }
 }
-
+/* sets styling and positioning for different display sizes */
 @media all and (max-width: 1150px) and (min-width: 700px) {
   body {
     background: rgba(225, 255, 0, 0.041);
