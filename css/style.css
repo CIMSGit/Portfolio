@@ -101,6 +101,7 @@ section >img{
   "bio bio "
   "xxx yyy"
   "uuu ttt";
+  /* gap: 5px; */
 }
 
 .work-grid {
@@ -116,15 +117,15 @@ section >img{
 }
 
 
-
-.work-grid h1 {
+/* Not needed settings, testing purposes */
+/* .work-grid h4 {
   background-color: rgba(255, 68, 0, 0.829);
-  /* position: relative; */
+  position: relative;
   bottom: 10px;
   max-width: fit-content;
   padding: 5px;
   color:white;
-}
+} */
 
 .work-grid h1 a{
   background-color: rgba(255, 68, 0, 0.829);
@@ -175,7 +176,7 @@ section >img{
     grid-area: uuu;
 }
 
-/* stulying for paragraphs */
+/* styling for paragraphs */
 p{
   color: black;
   margin: 0px;
