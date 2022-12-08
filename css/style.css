@@ -309,7 +309,12 @@ p{
   body {
     background: rgba(225, 255, 0, 0.041);
   }
-  .container{
+
+nav{
+  margin-right: 40px;
+}
+
+.container{
     margin: 0px 5%;
     display: grid;
     min-height: 300px;
@@ -322,23 +327,27 @@ p{
 p{
   font-size: 14px;
 }
-  section > img{
+
+section > img{
     height: 120px;
   }
-  .hero-banner{
+
+.hero-banner{
     display: none;
   }
- #bio img{
+
+#bio img{
   height: 500px;
  }
   /* header{
     display: none;
   } */
 
-  .work-grid img{
+.work-grid img{
   height: 225px;
   }
-  #workGrid{
+
+#workGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -349,6 +358,10 @@ p{
     
   }
  
+header h1{
+   margin-left: 20px;
+  }
+
 .page-section h2{
   display: flex;
   font-size: 20px;
